@@ -7,7 +7,7 @@
 
 # Configure package contents
 # A4_AESD_ASSIGNMENTS_VERSION = 0b23290ffcd3a5bc7fa6a305d1c938fa035265ba
-AESD_ASSIGNMENTS_VERSION = a7d2f79244cf0a522d8338ee545f186824f6d320
+AESD_ASSIGNMENTS_VERSION = 81993b85f2dc269026aae5b8be98458587b84eb7
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
