@@ -5,5 +5,5 @@
 	path = buildroot
 	url = https://gitlab.com/buildroot.org/buildroot/
 [submodule "assignment-7-jauy2310"]
-	path = ldd3
+	path = assignment-7-jauy2310
 	url = git@github.com:cu-ecen-aeld/assignment-7-jauy2310.git
