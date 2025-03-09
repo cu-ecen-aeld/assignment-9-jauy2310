@@ -8,4 +8,4 @@
 	path = ldd3
 	url = git@github.com:cu-ecen-aeld/assignment-7-jauy2310.git
 [submodule "ldd3"]
-	url = https://github.com/cu-ecen-aeld/assignment-7-jauy2310.git
+	url = git@github.com:cu-ecen-aeld/assignment-7-jauy2310.git
