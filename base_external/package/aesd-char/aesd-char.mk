@@ -11,14 +11,7 @@ AESD_CHAR_GIT_SUBMODULES = YES
 
 AESD_CHAR_MODULE_SUBDIRS += aesd-char-driver
 
-AESD_CHAR_MODULE_MAKE_OPTS = KERNELDIR=$(LINUX_DIR) ARCH=$(KERNEL_ARCH)
-
-define AESD_CHAR_INSTALL_TARGET_CMDS
-
-	$(INSTALL) -m 755 $(@D)/aesd-char-driver/aesdchar.ko $(TARGET_DIR)/usr/bin/
-	$(INSTALL) -m 755 $(@D)/aesd-char-driver/aesdchar.ko $(TARGET_DIR)/etc/init.d/
-
-endef
+AESD_CHAR_MODULE_MAKE_OPTS = KERNELDIR=$(LINUX_DIR)
 
 $(eval $(kernel-module))
 $(eval $(generic-package))
