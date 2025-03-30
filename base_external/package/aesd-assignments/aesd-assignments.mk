@@ -7,7 +7,7 @@
 
 # Configure package contents
 # A4_AESD_ASSIGNMENTS_VERSION = 0b23290ffcd3a5bc7fa6a305d1c938fa035265ba
-AESD_ASSIGNMENTS_VERSION = 110ccda5a04c28541ed8abe7563bece62abbac39
+AESD_ASSIGNMENTS_VERSION = 31c93c3e04b7da819b9698bd01c88f63b3f14e41
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -29,7 +29,8 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/finder-app/writer.sh $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/usr/bin
-	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/etc/init.d/S99aesdsocket
+	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin
+	$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket
 endef
 
 $(eval $(generic-package))
